@@ -110,8 +110,8 @@ div.portfolio-item-img img {
 	text-transform: uppercase;
 	font-size: 0.75em;
 	font-weight: bold;
-display: block;
-padding: 8px 12px;	
+	display: block;
+	padding: 8px 12px;	
 }
 
 #filter ul li {
