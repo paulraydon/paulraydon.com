@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <title>Paul Raydon Moignard</title>
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Paul Raydon Moignard">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,7 +32,7 @@
   <link rel="icon" type="image/png" href="images/favicon-16.png">
 
 </head>
-<body>
+<body class="work">
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -41,25 +41,25 @@
   </div>
   <nav id="main">
     <ol>
-      <li><a href="#">Work</a></li>  
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a class="work" href="index.html">Work</a></li>  
+      <li><a class="about" href="about.html">About</a></li>
+      <li><a class="contact" href="contact.html">Contact</a></li>
     </ol>
   </nav> 
   
   <div id="filter">
     <ul>
       Show:
-      <li><a href="#">All</a></li>  
-      <li><a href="#">Branding</a></li>
-      <li><a href="#">Print &amp; Publishing</a></li>   
-      <li><a href="#">UX Design</a></li>     
+      <li><a href="javascript:void();" id="filter-all">All</a></li>  
+      <li><a href="javascript:void();" id="filter-branding">Branding</a></li>
+      <li><a href="javascript:void();" id="filter-print">Print &amp; Publishing</a></li>   
+      <li><a href="javascript:void();" id="filter-ux">UX Design</a></li>     
     </ul>
   </div><!-- End filter -->
   
   <div id="portfolio-items">
     
-    <div class="portfolio-item">
+    <div class="portfolio-item branding">
       <div class="portfolio-item-pad">
         <div class="portfolio-item-img">
           <img src="images/wave.jpg"/>
@@ -70,18 +70,29 @@
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
-    <div class="portfolio-item">
+    <div class="portfolio-item ux">
       <div class="portfolio-item-pad">
       <div class="portfolio-item-img">
         <img src="images/wave.jpg"/>
       </div>
-        <span class="portfolio-item-tag">Branding</span> 
+        <span class="portfolio-item-tag">UX Design</span> 
         <h2 class="portfolio-item-name">Name</h2>
         <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p> 
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
-    <div class="portfolio-item">
+    <div class="portfolio-item print">
+      <div class="portfolio-item-pad">
+<div class="portfolio-item-img">
+  <img src="images/wave.jpg"/>
+</div>
+        <span class="portfolio-item-tag">Print</span> 
+        <h2 class="portfolio-item-name">Name</h2>
+        <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p> 
+      </div><!-- End portfolio-item-pad -->
+    </div><!-- End portfolio-item -->
+    
+    <div class="portfolio-item branding">
       <div class="portfolio-item-pad">
 <div class="portfolio-item-img">
   <img src="images/wave.jpg"/>
@@ -92,34 +103,23 @@
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
-    <div class="portfolio-item">
+    <div class="portfolio-item print">
       <div class="portfolio-item-pad">
 <div class="portfolio-item-img">
   <img src="images/wave.jpg"/>
 </div>
-        <span class="portfolio-item-tag">Branding</span> 
+        <span class="portfolio-item-tag">Print</span> 
         <h2 class="portfolio-item-name">Name</h2>
         <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p> 
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
-    <div class="portfolio-item">
+    <div class="portfolio-item print">
       <div class="portfolio-item-pad">
 <div class="portfolio-item-img">
   <img src="images/wave.jpg"/>
 </div>
-        <span class="portfolio-item-tag">Branding</span> 
-        <h2 class="portfolio-item-name">Name</h2>
-        <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p> 
-      </div><!-- End portfolio-item-pad -->
-    </div><!-- End portfolio-item -->
-    
-    <div class="portfolio-item">
-      <div class="portfolio-item-pad">
-<div class="portfolio-item-img">
-  <img src="images/wave.jpg"/>
-</div>
-        <span class="portfolio-item-tag">Branding</span> 
+        <span class="portfolio-item-tag">Print</span> 
         <h2 class="portfolio-item-name">Name</h2>
         <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p> 
       </div><!-- End portfolio-item-pad -->
@@ -137,3 +137,41 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
+
+<script>
+
+if ($("body").hasClass("work")) {
+  $("nav#main ol li a.work").addClass('current');
+}
+
+if ($("body").hasClass("about")) {
+  $("nav#main ol li a.about").addClass('current');
+}
+
+if ($("body").hasClass("contact")) {
+  $("nav#main ol li a.contact").addClass('current');
+}
+
+$("#filter-all").click(function() {
+  $(".portfolio-item").show();
+});
+
+$("#filter-branding").click(function() {
+  $(".branding").show();
+  $(".print").hide();
+  $(".ux").hide();
+});
+
+$("#filter-print").click(function() {
+  $(".print").show();
+  $(".branding").hide();
+  $(".ux").hide();
+});
+
+$("#filter-ux").click(function() {
+  $(".ux").show();
+  $(".branding").hide();
+  $(".print").hide();
+});
+
+</script>

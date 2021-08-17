@@ -32,10 +32,19 @@ nav#main ol li a {
 	text-decoration: none;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding: 10px 0px 7px 0px;
+	padding: 16px 0px 13px 0px;
 	display: block;
 	line-height: 1em;
 	font-size: 0.85em;
+	letter-spacing: 0.2em;
+	border-bottom: 3px solid #fff;
+}
+
+nav#main ol li a:hover {
+	border-bottom: 3px solid #999;
+}
+
+nav#main ol li a.current {
 	border-bottom: 3px solid #999;
 }
 
@@ -43,7 +52,7 @@ div#portfolio-items {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 0px 0px 0px 12px;
+	padding: 0em 0em 0em 1.5em;
 }
 
 div.portfolio-item {
@@ -65,7 +74,6 @@ div.portfolio-item-img img {
 }
 
 .portfolio-item-tag {
-	border: 2px solid black;
 	border-radius: 4px;
 	text-transform: uppercase;
 	display: inline-block;
@@ -73,6 +81,21 @@ div.portfolio-item-img img {
 	font-size: 0.75em;
 	font-weight: bold;
 	margin-bottom: 5px;
+}
+
+.branding .portfolio-item-tag {
+	border: 2px solid #140D4F;
+	color: #140D4F;
+}
+
+.print .portfolio-item-tag {
+	border: 2px solid #4EA699;
+	color: #4EA699;
+}
+
+.ux .portfolio-item-tag {
+	border: 2px solid #2DD881;
+	color: #2DD881;
 }
 
 .portfolio-item-name {
@@ -110,29 +133,24 @@ div.portfolio-item-img img {
 	display: block;
 }
 
-nav#social {
-	text-align: center;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+#filter ul li a#filter-all {
+	color: rgb(175, 175, 175);
 }
 
-nav#social ul {
-	margin: 0;
+#filter ul li a#filter-branding {
+	color: rgb(175, 0, 0);
 }
 
-nav#social ul li {
-	display: inline-block;
-	margin: 0px 10px 0px 10px;
+#filter ul li a#filter-print {
+	color: rgb(0, 175, 0)		
 }
 
-nav#social ul li a {
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: uppercase;
-	padding: 10px 12px;
-	display: block;
-	line-height: 1em;
-	letter-spacing: 0.25em;
+#filter ul li a#filter-ux {
+	color: rgb(0, 0, 175)
+}
+
+.pad {
+	padding: 1.5em;
 }
 
 section#footer {
