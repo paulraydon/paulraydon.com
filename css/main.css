@@ -3,13 +3,12 @@
 	padding: 2em 2em 0em 2em;
 }
 
-h4#name-mark {
+div#name-mark {
 	text-transform: uppercase; 
-	padding: 0.25em 0em 0.25em 0.25em; 
-	border: 3px solid black; 
-	display: inline-block; l
-	ine-height: 1em; 
-	letter-spacing: 0.25em;
+	padding: 0.25em 0.15em 0.25em 0.45em;
+	line-height: 1em; 
+	letter-spacing: 0.1em;
+	position: relative;
 }
 
 nav#main {
@@ -41,11 +40,11 @@ nav#main ol li a {
 }
 
 nav#main ol li a:hover {
-	border-bottom: 3px solid #999;
+	border-bottom: 3px solid #FAD41D;
 }
 
 nav#main ol li a.current {
-	border-bottom: 3px solid #999;
+	border-bottom: 3px solid #FAD41D;
 }
 
 div#portfolio-items {
@@ -107,6 +106,7 @@ div.portfolio-item-img img {
 .portfolio-item-desc {
 	line-height: 1.35em;
 	margin: 0;
+	font-family: "Karla", sans-serif
 }
 
 #filter {
