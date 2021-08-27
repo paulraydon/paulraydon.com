@@ -58,7 +58,21 @@
   
  <div id="content">
 	 <div class="pad">
-		 Story
+		 <div id="portfolio-story" class="branding">
+		 <div id="media">
+			 <div class="story-pad">
+			 	<img src="images/wave.jpg"/>
+				<img src="images/wave.jpg"/>
+			 </div>
+		 </div><!-- End media -->
+	 	<div id="description">
+			 <div class="pad">
+		 	<span class="portfolio-item-tag">Branding</span> 
+			 <h2 class="portfolio-item-name">Name</h2>
+			 <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p>
+			 </div>
+		 </div><!-- End description -->
+		 </div>
 	 </div><!-- End pad -->
  </div><!-- End content -->
  
@@ -86,27 +100,4 @@ if ($("body").hasClass("about")) {
 if ($("body").hasClass("contact")) {
   $("nav#main ol li a.contact").addClass('current');
 }
-
-$("#filter-all").click(function() {
-  $(".portfolio-item").show();
-});
-
-$("#filter-branding").click(function() {
-  $(".branding").show();
-  $(".print").hide();
-  $(".ux").hide();
-});
-
-$("#filter-print").click(function() {
-  $(".print").show();
-  $(".branding").hide();
-  $(".ux").hide();
-});
-
-$("#filter-ux").click(function() {
-  $(".ux").show();
-  $(".branding").hide();
-  $(".print").hide();
-});
-
 </script>

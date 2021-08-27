@@ -1,6 +1,6 @@
 body {
 	background: #ffffff url('/images/bg.gif') no-repeat top center;
-	background-size: contain;
+	background-size: cover;
 }
 
 #header {
@@ -258,4 +258,30 @@ section#footer {
 	text-align: center;
 	color: #666666;
 	padding: 0px 12px 12px 12px;
+}
+
+#portfolio-story {
+	border: 1px solid #999999;
+	display: flex;
+}
+
+#media {
+	width: 60%;
+	border-right: 1px solid #999;
+	background-color: #ffffff;
+}
+
+.story-pad {
+	padding: 0em, 1.5em, 1.5em, 1.5em;
+}
+
+#media img {
+	width: 100%;
+	padding-bottom: 0;
+	margin-bottom: -7px;
+	margin-top: 1.5em;
+}
+
+#description {
+	width: 40%;
 }
