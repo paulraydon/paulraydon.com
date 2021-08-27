@@ -267,12 +267,12 @@ section#footer {
 
 #media {
 	width: 60%;
-	border-right: 1px solid #999;
+	border-right: 1px solid #999999;
 	background-color: #ffffff;
 }
 
 .story-pad {
-	padding: 0em, 1.5em, 1.5em, 1.5em;
+	padding: 0em 1.5em 1.5em 1.5em;
 }
 
 #media img {
