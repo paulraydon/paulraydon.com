@@ -1,14 +1,19 @@
+body {
+	background: #ffffff url('/images/bg.gif') no-repeat top center;
+	background-size: contain;
+}
+
 #header {
-	text-align: center; 
-	padding: 2em 2em 0em 2em;
+	padding: 3em;
 }
 
 div#name-mark {
-	text-transform: uppercase; 
-	padding: 0.25em 0.15em 0.25em 0.45em;
-	line-height: 1em; 
-	letter-spacing: 0.1em;
-	position: relative;
+	margin: auto;
+	width: 600px;
+}
+
+div#name-mark img {
+	width: 100%;
 }
 
 nav#main {
@@ -29,14 +34,15 @@ nav#main ol li {
 
 nav#main ol li a {
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 500;
+	color: #000000;
 	text-transform: uppercase;
 	padding: 16px 0px 13px 0px;
 	display: block;
 	line-height: 1em;
 	font-size: 0.85em;
-	letter-spacing: 0.2em;
-	border-bottom: 3px solid #fff;
+	letter-spacing: 0.15em;
+	border-bottom: 3px solid transparent;
 }
 
 nav#main ol li a:hover {
@@ -51,14 +57,53 @@ div#portfolio-items {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 0em 0em 0em 1.5em;
+	padding-left: 1.612903225806452%;
 }
 
 div.portfolio-item {
 	border: 1px solid #999;
-	padding: 1.5em;
-	margin: 0em 1.5em 1.5em 0em;
-	width: 28%;
+	padding: 1.612903225806452%;
+	margin: 0 1.612903225806452% 1.612903225806452% 0;
+	background-color: #ffffff;
+	color: #666666;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	div.portfolio-item {
+		width: 90%;
+	}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+div.portfolio-item {
+	width: 90%;
+}	
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+div.portfolio-item {
+	width: 44%;
+}	
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1232px) {
+div.portfolio-item {
+	width: 44%;
+}
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+div.portfolio-item {
+	width: 27.75%;
+}
+}
+
+/* Extra large devices (extra large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1441px) {
+	div.portfolio-item {
+		width: 28.375%;
+	}
 }
 
 div.portfolio-item-img {
@@ -73,80 +118,136 @@ div.portfolio-item-img img {
 }
 
 .portfolio-item-tag {
-	border-radius: 4px;
 	text-transform: uppercase;
 	display: inline-block;
-	padding: 2px 6px;
+	padding-left: 1.75em;
 	font-size: 0.75em;
-	font-weight: bold;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	font-family: 'Rubik', sans-serif;
 	margin-bottom: 5px;
+	color: #666666;
 }
 
 .branding .portfolio-item-tag {
-	border: 2px solid #140D4F;
-	color: #140D4F;
+	background: transparent url('/images/star-grey.svg') no-repeat 0% 40%;
+	background-size: 1em;
 }
 
 .print .portfolio-item-tag {
-	border: 2px solid #4EA699;
-	color: #4EA699;
+	background: transparent url('/images/pub-grey.svg') no-repeat 0% 40%;
+	background-size: 1em;
 }
 
 .ux .portfolio-item-tag {
-	border: 2px solid #2DD881;
-	color: #2DD881;
+	background: transparent url('/images/ux-grey.svg') no-repeat 0% 40%;
+	background-size: 1em;
 }
 
 .portfolio-item-name {
 	font-size: 1.5em;
-	font-weight: bold;
+	font-weight: 500;
 	margin-bottom: 0.35em;
+	font-family: 'Rubik', sans-serif;
 }
 
 .portfolio-item-desc {
 	line-height: 1.35em;
 	margin: 0;
-	font-family: "Karla", sans-serif
+	font-family: "Karla", sans-serif;
+}
+
+div.portfolio-item a {
+	font-family: 'Rubik', sans-serif;
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 0.75em;
+	letter-spacing: 0.15em;
+	display: inline-block;
+	margin-top: 2em;
+	background: transparent url('/images/arrow.svg') no-repeat 100% 50%;
+	background-size: 0.75em;
+	padding-right: 1.25em;
+	border-bottom: 3px solid transparent;
+}
+
+div.portfolio-item a:hover {
+	 border-bottom: 3px solid #FAD41D;
 }
 
 #filter {
-	padding: 12px 12px 12px 12px;
+	padding: 0em 1.5em 1.5em 1.5em;
 	text-align: center;
+	font-family: 'Rubik', sans-serif;
 }
 
 #filter ul {
 	margin: 0;
+	padding: 0;
 	text-transform: uppercase;
 	font-size: 0.75em;
 	font-weight: bold;
 	display: block;
-	padding: 8px 12px;	
+	border-bottom: 1px solid #999;
 }
 
 #filter ul li {
 	display: inline-block;
-	margin-left: 1em;
+	margin-left: 0.85em;
+	margin-right: 0.85em;
+	padding: 0;
+	margin-bottom: 0;
 }
 
 #filter ul li a {
 	text-decoration: none;
 	display: block;
+	font-weight: 500;
+	letter-spacing: 0.15em;
+	line-height: 1em;
+	padding: 13px 0px 10px 0px;
+	color: #000000;
+	border-bottom: 3px solid transparent;
+}
+
+#filter ul li a:hover {
+	border-bottom: 3px solid #FAD41D;
+}
+
+#filter ul li a.selected {
+	border-bottom: 3px solid #FAD41D;
 }
 
 #filter ul li a#filter-all {
-	color: rgb(175, 175, 175);
+	background: transparent url('/images/all.svg') no-repeat 0% 54%;
+	background-size: 1em;
+	padding-left: 1.75em;
 }
 
 #filter ul li a#filter-branding {
-	color: rgb(175, 0, 0);
+	background: transparent url('/images/brand.svg') no-repeat 0% 51%;
+	background-size: 1em;
+	padding-left: 1.75em;
 }
 
 #filter ul li a#filter-print {
-	color: rgb(0, 175, 0)		
+	background: transparent url('/images/pub.svg') no-repeat 0% 54%;
+	background-size: 1em;
+	padding-left: 1.75em;
 }
 
 #filter ul li a#filter-ux {
-	color: rgb(0, 0, 175)
+	background: transparent url('/images/ux.svg') no-repeat 0% 54%;
+	background-size: 1em;
+	padding-left: 1.75em;
+}
+
+#filter ul li a#close {
+	background: transparent url('/images/x.svg') no-repeat 0% 54%;
+	background-size: 1em;
+	padding-left: 1.75em;
 }
 
 .pad {
@@ -155,5 +256,6 @@ div.portfolio-item-img img {
 
 section#footer {
 	text-align: center;
-	padding: 12px;
+	color: #666666;
+	padding: 0px 12px 12px 12px;
 }

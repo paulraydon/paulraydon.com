@@ -6,7 +6,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>Paul Raydon Moignard</title>
-  <meta name="description" content="">
+  <meta name="description" content="The design portfolio of Paul Raydon Moignard">
   <meta name="author" content="Paul Raydon Moignard">
 
   <!-- Mobile Specific Metas
@@ -39,24 +39,23 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="header">
       <div id="name-mark">
-        <img src="images/prm_logo.svg" width="50%" />
+        <img src="images/prm_logo.svg" />
       </div>
   </div>
   <nav id="main">
     <ol>
       <li><a class="work" href="index.html">Work</a></li>  
-      <li><a class="about" href="about.html">About</a></li>
+      <!-- <li><a class="about" href="about.html">About</a></li> -->
       <li><a class="contact" href="contact.html">Contact</a></li>
     </ol>
   </nav> 
   
   <div id="filter">
     <ul>
-      Show:
       <li><a href="javascript:void();" id="filter-all">All</a></li>  
       <li><a href="javascript:void();" id="filter-branding">Branding</a></li>
       <li><a href="javascript:void();" id="filter-print">Print &amp; Publishing</a></li>   
-      <li><a href="javascript:void();" id="filter-ux">UX Design</a></li>     
+      <li><a href="javascript:void();" id="filter-ux">UI/UX Design</a></li>     
     </ul>
   </div><!-- End filter -->
   
@@ -70,6 +69,7 @@
         <span class="portfolio-item-tag">Branding</span> 
         <h2 class="portfolio-item-name">Name</h2>
         <p class="portfolio-item-desc">Praesent consequat nisl vitae neque aliquam placerat. Maecenas vitae placerat risus, ac porttitor libero. Mauris eget convallis erat. Vivamus bibendum aliquet mi.</p> 
+        <a href="story.html">View Design Story</a>
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
@@ -157,21 +157,29 @@ if ($("body").hasClass("contact")) {
 
 $("#filter-all").click(function() {
   $(".portfolio-item").show();
+  $("#filter ul li a.selected").removeClass("selected");
+  $(this).addClass('selected');
 });
 
 $("#filter-branding").click(function() {
+  $("#filter ul li a.selected").removeClass("selected");
+  $(this).addClass('selected');
   $(".branding").show();
   $(".print").hide();
   $(".ux").hide();
 });
 
 $("#filter-print").click(function() {
+  $("#filter ul li a.selected").removeClass("selected");
+  $(this).addClass('selected');
   $(".print").show();
   $(".branding").hide();
   $(".ux").hide();
 });
 
 $("#filter-ux").click(function() {
+  $("#filter ul li a.selected").removeClass("selected");
+  $(this).addClass('selected');
   $(".ux").show();
   $(".branding").hide();
   $(".print").hide();

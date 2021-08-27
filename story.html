@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Paul Raydon Moignard</title>
+  <meta name="description" content="">
+  <meta name="author" content="Paul Raydon Moignard">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/barebones.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-16.png">
+
+</head>
+<body class="work">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="header">
+	  <div id="name-mark">
+		<img src="images/prm_logo.svg" />
+	  </div>
+  </div>
+  <nav id="main">
+	<ol>
+	  <li><a class="work" href="index.html">Work</a></li>  
+	  <!-- <li><a class="about" href="about.html">About</a></li> -->
+	  <li><a class="contact" href="contact.html">Contact</a></li>
+	</ol>
+  </nav> 
+  
+  <div id="filter">
+	<ul>
+	  <li><a href="index.html" id="close">Close Design Story</a></li>       
+	</ul>
+  </div><!-- End filter -->
+  
+ <div id="content">
+	 <div class="pad">
+		 Story
+	 </div><!-- End pad -->
+ </div><!-- End content -->
+ 
+  <section id="footer">
+	<div class="pad">
+	  Copyright &copy; 2021. All rights reserved.
+	</div>
+  </section>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+<script>
+
+if ($("body").hasClass("work")) {
+  $("nav#main ol li a.work").addClass('current');
+}
+
+if ($("body").hasClass("about")) {
+  $("nav#main ol li a.about").addClass('current');
+}
+
+if ($("body").hasClass("contact")) {
+  $("nav#main ol li a.contact").addClass('current');
+}
+
+$("#filter-all").click(function() {
+  $(".portfolio-item").show();
+});
+
+$("#filter-branding").click(function() {
+  $(".branding").show();
+  $(".print").hide();
+  $(".ux").hide();
+});
+
+$("#filter-print").click(function() {
+  $(".print").show();
+  $(".branding").hide();
+  $(".ux").hide();
+});
+
+$("#filter-ux").click(function() {
+  $(".ux").show();
+  $(".branding").hide();
+  $(".print").hide();
+});
+
+</script>
