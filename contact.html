@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONTS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
@@ -27,6 +27,23 @@
   <!-- JS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+  
+  $(document).ready(function() {			
+    // anti spam
+    var r='xYzerope';
+   
+    $('.'+r).each(function() {
+    var $this = $(this),
+      value = new String($this.text());
+   
+      value = value.replace('['+r+']', '@');
+   
+      $this.replaceWith($('<a></a>').text(value).attr('href', 'mailto:'+value));
+    });
+  });
+  
+  </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,26 +55,32 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div id="header">
-	  <h4 id="name-mark">Paul Raydon Moignard</h4>
+    <div id="name-mark">
+    <img src="images/prm_logo.svg" />
+    </div>
   </div>
   <nav id="main">
-	<ol>
-	  <li><a class="work" href="index.html">Work</a></li>  
-	  <li><a class="about" href="about.html">About</a></li>
-	  <li><a class="contact" href="contact.html">Contact</a></li>
-	</ol>
+  <ol>
+    <li><a class="work" href="index.html">Work</a></li>  
+    <!-- <li><a class="about" href="about.html">About</a></li> -->
+    <li><a class="contact" href="contact.html">Contact</a></li>
+  </ol>
   </nav>
   
-<div id="content">
-	  <div class="pad">
-		  Contact
-	  </div>
-  </div>
-  
+ <div id="content">
+   <div class="pad">
+     <div id="contact-details">
+       <img src="/images/mail.svg" />
+        <h4>Send me an email</h4>
+        <span class="xYzerope">pmoignard[xYzerope]gmail.com</span>
+     </div>
+   </div><!-- End pad -->
+ </div><!-- End content -->
+ 
   <section id="footer">
-	<div class="pad">
-	  Copyright &copy; 2021. All rights reserved.
-	</div>
+  <div class="pad">
+    Copyright &copy; 2021. All rights reserved.
+  </div>
   </section>
 
 <!-- End Document
@@ -66,9 +89,15 @@
 </html>
 
 <script>
+if ($("body").hasClass("work")) {
+  $("nav#main ol li a.work").addClass('current');
+}
+
+if ($("body").hasClass("about")) {
+  $("nav#main ol li a.about").addClass('current');
+}
 
 if ($("body").hasClass("contact")) {
   $("nav#main ol li a.contact").addClass('current');
 }
-
 </script>
