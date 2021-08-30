@@ -161,12 +161,27 @@ div.portfolio-item-img img {
 	margin-bottom: 0.35em;
 	letter-spacing: 0.05em;
 	font-family: 'Rubik', sans-serif;
+	color: #666666;
 }
 
 .portfolio-item-desc {
 	line-height: 1.35em;
 	margin: 0;
 	font-family: "Karla", sans-serif;
+	color: #666666;
+}
+
+.portfolio-item-desc a {
+	text-decoration: none;
+	color: #000000;
+	font-weight: 500;
+	font-family: 'Rubik', sans-serif;
+	text-transform: uppercase;
+}
+
+.portfolio-item-desc a:hover {
+	text-decoration: underline;
+	text-decoration-color: #FAD41D;
 }
 
 div.portfolio-item a {
