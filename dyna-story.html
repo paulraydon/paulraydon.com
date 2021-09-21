@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Paul Raydon Moignard</title>
+  <meta name="description" content="">
+  <meta name="author" content="Paul Raydon Moignard">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/barebones.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-16.png">
+
+</head>
+<body class="work">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="header">
+	  <div id="name-mark">
+		<img src="images/prm_logo.svg" />
+	  </div>
+  </div>
+  <nav id="main">
+	<ol>
+	  <li><a class="work" href="index.html">Work</a></li>  
+	  <!-- <li><a class="about" href="about.html">About</a></li> -->
+	  <li><a class="contact" href="contact.html">Contact</a></li>
+	</ol>
+  </nav> 
+  
+  <div id="filter">
+	<ul>
+	  <li><a href="index.html" id="close">Close</a></li>       
+	</ul>
+  </div><!-- End filter -->
+  
+ <div id="content">
+	 <div class="story-pad">
+		 <div id="portfolio-story" class="ux">
+<div id="description">
+	 <div class="pad">
+	 <span class="portfolio-item-tag">UI/UX &#8226; Concept</span> 
+	 <h2 class="portfolio-item-name">Dynamite App</h2>
+	 <p class="portfolio-item-desc">I began this concept by re-focussing on what the customer wants to do when they open the app - shop. The current app seems more concerned with pushing new functionality than giving the user a concise shopping experience. Various buttons abound, all in the same colour as the rest of the interface elements, which make them hard to identify. Touch targets are strangely grouped, small, and badly spaced, which makes user actions more difficult. Interaction methods change from page to page, making learning the interface less transparent. Icons in general are overly complex in form, and in some cases fail to properly describe the linked function or content. Finally, the mark within the <b>app icon</b> itself is oversized, which dilutes the impact of the brand.</p>
+   
+   <p class="portfolio-item-desc" style="margin-top: 0.75em;">I began to address these issues by giving the whole app a consistent visual hierarchy, with clear delineation between titles, text, prices, and touch targets. <em>Dynamite</em>'s brand colours are black and white, but another colour was needed to differentiate touch targets from the rest of the interface. Gold was chosen for this function because it is used as a decor accent colour at <em>Dynamite</em> retail locations, and is a colour that people associate with high fashion. All actionable elements were coloured, resized, and given more margin to improve touch accuracy. Where necessary, iconography was simplified or re-drawn to add more brevity.</p>
+   
+   <p class="portfolio-item-desc" style="margin-top: 0.75em;">Next, the problem of how the actionable elements were grouped needed to be solved. Both search functions were combined under a single search icon in the top bar. The scrolling clothing category menu was standardized across all <b<list screens</b>, starting on the very first screen of the app, ensuring consistency and helping users learn and understand the interface from the very beginning. I better organized each screen by removing contextual functions from the overly crowded top bar (see original product detail screen), and added them to a menu of their own below the category menu, allowing them to appear as needed while keeping the functions in the top bar consistent.</p>
+   
+   <p class="portfolio-item-desc" style="margin-top: 0.75em;">The <b>product detail screen</b> was then reworked and simplified, grouping important or similar functions together. Product images were resized to give more breathing room to interaction and information, and visual cues introduced for products with multiple images. Instead of hiding product details in a hard to find button in the menu bar, I added them to the bottom of the screen, making vital information a simple scroll away.</p>
+   
+   <p class="portfolio-item-desc" style="margin-top: 0.75em;">Finally, the <b>app icon</b>. Agreeable margin was given to the <em>Dynamite</em> mark to improve its legibility and impact, as well as its visual balance.</p>
+    </div>
+ </div><!-- End description -->
+		 <div id="media">
+			 <div class="story-pad">
+			 	   <img src="images/portfolio/dynamite_screens.jpg"/>
+        </div>
+			 </div>
+		 </div><!-- End media -->
+		 </div>
+	 </div><!-- End pad -->
+ </div><!-- End content -->
+ 
+  <section id="footer">
+	<div class="pad">
+	  Copyright &copy; 2021. All rights reserved.
+	</div>
+  </section>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+<script>
+
+if ($("body").hasClass("work")) {
+  $("nav#main ol li a.work").addClass('current');
+}
+
+if ($("body").hasClass("about")) {
+  $("nav#main ol li a.about").addClass('current');
+}
+
+if ($("body").hasClass("contact")) {
+  $("nav#main ol li a.contact").addClass('current');
+}
+</script>
