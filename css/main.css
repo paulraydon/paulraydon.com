@@ -1,6 +1,7 @@
 body {
 	background: #ffffff url('/images/bg.gif') no-repeat top center;
 	background-size: cover;
+	width: 100%;
 }
 
 #header {
