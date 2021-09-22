@@ -80,8 +80,15 @@ div.portfolio-item {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+	
+	div#portfolio-items {
+		display: block;
+		padding-left: 0;
+	}
+	
 	div.portfolio-item {
-		width: 90%;
+		padding: 1.5em;
+		margin: 0 1.5em 1.5em 1.5em;
 	}
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
