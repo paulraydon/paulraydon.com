@@ -55,7 +55,8 @@
       <li><a href="javascript:void();" id="filter-all" class="selected">All</a></li>  
       <li><a href="javascript:void();" id="filter-branding">Branding</a></li>
       <li><a href="javascript:void();" id="filter-print">Print</a></li>   
-      <li><a href="javascript:void();" id="filter-ux">UI/UX</a></li>     
+      <li><a href="javascript:void();" id="filter-ux">UI/UX</a></li>
+      <li><a href="javascript:void();" id="filter-video">Video</a></li>     
     </ul>
   </div><!-- End filter -->
   
@@ -105,6 +106,7 @@
         <span class="portfolio-item-tag">Branding</span> 
         <h2 class="portfolio-item-name">A&#8226;P&#8226;E Alternative</h2>
         <p class="portfolio-item-desc">The brief for the A&#8226;P&#8226;E Alternative asked for a logo that represented the core focus of the life coaching initiative: freedom from personal bondages. The client also wanted to communicate an "epic" and "adventuresome" tone to potential clients. The "broken cage" mark and gothic but modern lettering finishes a logo that meets the brief and stands out in the life coaching marketplace.</p>
+        <a href="ape-story.html">View Brand Applications</a>
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
@@ -128,7 +130,8 @@
 </div>
         <span class="portfolio-item-tag">Branding</span> 
         <h2 class="portfolio-item-name">Kaleidoscope Counselling</h2>
-        <p class="portfolio-item-desc">Kaleidoscope Counselling is all about inviting and equipping people to see their lives and circumstances with new and healthy perspectives. Gentle colours inspire a relaxed and relational atmosphere, while the fractal form of the mark is reminiscent of the new perspectives seen through a kaleidoscope in addition to a deconstructed "box", which signifies freedom from old assumptions.</p> 
+        <p class="portfolio-item-desc">Kaleidoscope Counselling is all about inviting and equipping people to see their lives and circumstances with new and healthy perspectives. Gentle colours inspire a relaxed and relational atmosphere, while the fractal form of the mark is reminiscent of the new perspectives seen through a kaleidoscope in addition to a deconstructed "box", which signifies freedom from old assumptions.</p>
+        <a href="k-counselling-story.html">View Brand Applications</a> 
       </div><!-- End portfolio-item-pad -->
     </div><!-- End portfolio-item -->
     
@@ -174,7 +177,19 @@
 </div>
     <span class="portfolio-item-tag">Branding</span> 
     <h2 class="portfolio-item-name">Culinary Club</h2>
-    <p class="portfolio-item-desc">Conceived by a local YYC chef and friend as a monthly pop-up culinary experience hosted in people's homes, the vision of Culinary Club was to gather a community of people together to sample cuisines from around the world. Culinary Club needed an identity system that could be used to promote the changing menu for each event while remaining strongly identifiable and reflective of a respected culinary endeavour. Each month, the food was professionally photographed and overlaid with the letter-mark to highlight the wide variety of cusines to current and future attendees.</p> 
+    <p class="portfolio-item-desc">Conceived by a local YYC chef and friend as a monthly pop-up culinary experience hosted in people's homes, the vision of Culinary Club was to gather a community of people together to sample cuisines from around the world. Culinary Club needed an identity system that could be used to promote the changing menu for each event while remaining strongly identifiable and reflective of a respected culinary endeavour. Each month, the food was professionally photographed and overlaid with the letter-mark to highlight the wide variety of cuisines to current and future attendees.</p> 
+  </div><!-- End portfolio-item-pad -->
+</div><!-- End portfolio-item -->
+
+<div class="portfolio-item video">
+  <div class="portfolio-item-pad">
+<div class="portfolio-item-img">
+<img src="images/portfolio/travel_films.jpg"/>
+</div>
+    <span class="portfolio-item-tag">Video</span> 
+    <h2 class="portfolio-item-name">Travel Films</h2>
+    <p class="portfolio-item-desc">These two travel films were conceived and shot and edited as a personal project while travelling in Asia. I wanted to see what I could create with minimal equipment, so both of these were shot by a handheld stabilizer, an iPhone, and attachable lenses. The goal was to give a quick but intimate feeling expose of each country.</p> 
+    <a href="film-story.html">Watch Films</a>
   </div><!-- End portfolio-item-pad -->
 </div><!-- End portfolio-item -->
     
@@ -217,6 +232,7 @@ $("#filter-branding").click(function() {
   $(".branding").show();
   $(".print").hide();
   $(".ux").hide();
+  $(".video").hide();
 });
 
 $("#filter-print").click(function() {
@@ -225,6 +241,7 @@ $("#filter-print").click(function() {
   $(".print").show();
   $(".branding").hide();
   $(".ux").hide();
+  $(".video").hide();
 });
 
 $("#filter-ux").click(function() {
@@ -233,6 +250,16 @@ $("#filter-ux").click(function() {
   $(".ux").show();
   $(".branding").hide();
   $(".print").hide();
+  $(".video").hide();
+});
+
+$("#filter-video").click(function() {
+  $("#filter ul li a.selected").removeClass("selected");
+  $(this).addClass('selected');
+  $(".video").show();
+  $(".branding").hide();
+  $(".print").hide();
+  $(".ux").hide();
 });
 
 </script>
