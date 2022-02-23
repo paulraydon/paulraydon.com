@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Paul Raydon Moignard</title>
+  <meta name="description" content="">
+  <meta name="author" content="Paul Raydon Moignard">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/barebones.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon-16.png">
+
+</head>
+<body class="work">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="header">
+	  <div id="name-mark">
+		<img src="images/prm_logo2.svg" />
+	  </div>
+  </div>
+  <nav id="main">
+	<ol>
+	  <li><a class="work" href="index.html">Work</a></li>  
+	  <!-- <li><a class="about" href="about.html">About</a></li> -->
+	  <li><a class="contact" href="contact.html">Contact</a></li>
+	</ol>
+  </nav> 
+  
+  <div id="filter">
+	<ul>
+	  <li><a href="index.html" id="close">Close</a></li>       
+	</ul>
+  </div><!-- End filter -->
+  
+ <div id="content">
+	 <div class="story-pad">
+		 <div id="portfolio-story" class="branding">
+<div id="description">
+	 <div class="pad">
+	 <span class="portfolio-item-tag">Branding &#8226; Concept</span> 
+	 <h2 class="portfolio-item-name">CAB 9 Snowboarding</h2>
+	 <p class="portfolio-item-desc">Named for a difficult snowboard trick, CAB 9 needed a strong mark that would be right at home emblazoned on stickers, shirts, hats, and snowboards. Taking inspiration from the trick itself, the stylized "C" and "9" elements combine to form a "dial" in rotation, and the bold weight and contrasting colours invoke the "seriously playful" snowboard culture. Due to these considerations, the CAB 9 logo mark looks at home on a variety of different kinds of apparel and products, and can be selectively matched with different fonts to communicate different brand messages.</p>
+	</div>
+ </div><!-- End description -->
+		 <div id="media">
+			 <div class="story-pad">
+			<img src="images/portfolio/cab9_white_cap.jpg"/>
+			<img src="images/portfolio/cab9_shirt.jpg"/>
+			<img src="images/portfolio/cab9_woolhat.jpg"/>
+			<img src="images/portfolio/cab9_board.jpg"/>
+		</div>
+			 </div>
+		 </div><!-- End media -->
+		 </div>
+	 </div><!-- End pad -->
+ </div><!-- End content -->
+ 
+  <section id="footer">
+	<div class="pad">
+	  Copyright &copy; 2021. All rights reserved.
+	</div>
+  </section>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
+
+<script>
+
+if ($("body").hasClass("work")) {
+  $("nav#main ol li a.work").addClass('current');
+}
+
+if ($("body").hasClass("about")) {
+  $("nav#main ol li a.about").addClass('current');
+}
+
+if ($("body").hasClass("contact")) {
+  $("nav#main ol li a.contact").addClass('current');
+}
+</script>
